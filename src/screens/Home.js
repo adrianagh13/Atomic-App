@@ -1,10 +1,18 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import {Text, ImageBackground, View, ScrollView} from 'react-native';
+import {atomic, background1} from '../assets';
+import {Logo, StyledText} from '../components';
+import {Color, Size} from '../theme/default';
 
 export const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <ScrollView>
+      <ImageBackground
+        source={background1}
+        resizeMode="cover"
+        style={{flex: 1}}>
+        <Logo />
+      </ImageBackground>
+    </ScrollView>
   );
 };
