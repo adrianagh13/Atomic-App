@@ -15,11 +15,17 @@ export const Card = ({imageTitleSource, titleText, children, dots}) => {
         height="480px"
         margin={'20px'}>
         <ImageComponent
+          margin="5%"
           source={imageTitleSource}
           height="180px"
           width="180px"
         />
-        <ImageComponent source={division} width="200px" height="10px" />
+        <ImageComponent
+          margin="2%"
+          source={division}
+          width="200px"
+          height="10px"
+        />
         <StyledText
           text={titleText}
           color={Color.primary}
@@ -28,7 +34,7 @@ export const Card = ({imageTitleSource, titleText, children, dots}) => {
         />
         {children}
       </Container>
-      <Container margin={"20px"}>
+      <Container margin={'18px'}>
         <ImageComponent source={dots} width="100px" height="25px" />
       </Container>
     </CardContainer>

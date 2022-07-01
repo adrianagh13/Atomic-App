@@ -9,5 +9,5 @@ export const ButtonStyled = styled.TouchableOpacity`
   justify-content: center;
   padding: 10px;
   height: ${props => (props.height ? props.height : '60px')};
-  width: ${props => (props.width ? props.width : '50%')};
+  width: ${props => (props.width ? props.width : '60%')};
 `;

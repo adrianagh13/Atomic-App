@@ -6,7 +6,7 @@ import {ButtonStyled} from './styled';
 
 export const GeneralButton = ({text, background, color}) => {
   return (
-    <Container padding='16px'>
+    <Container margin="12%">
       <ButtonStyled background={background} color={color}>
         <StyledText text={text} color={color} size={Size.h4} />
       </ButtonStyled>
