@@ -14,8 +14,14 @@ import ramon from './ramon.png';
 import jaime from './jaime.png';
 import ximena from './ximena.png';
 import arrow from './arrow.png';
-import {linkedin} from './linkedin.png';
-import {twitter} from './twitter.png';
+import linkedin from './linkedin.png';
+import twitter from './twitter.png';
+import bar1 from './bar1.png';
+import bar2 from './bar2.png';
+import filled1 from './1-filled.png';
+import filled2 from './1-filled.png';
+import two from './2.png';
+import twoGray from './two-gray.png';
 
 export {
   atomic,
@@ -36,4 +42,10 @@ export {
   arrow,
   twitter,
   linkedin,
+  bar1,
+  bar2,
+  filled1,
+  filled2,
+  two,
+  twoGray,
 };

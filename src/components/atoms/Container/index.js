@@ -12,7 +12,6 @@ export const Container = ({
   color,
   justify,
   radius,
-  top,
 }) => {
   return (
     <ContainerView
@@ -24,7 +23,6 @@ export const Container = ({
       margin={margin}
       width={width}
       radius={radius}
-      top={top}
       color={color}>
       {children}
     </ContainerView>

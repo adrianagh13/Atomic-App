@@ -5,7 +5,7 @@ import {Cellphone, Home, Name, Registered} from '../screens';
 const Stack = createNativeStackNavigator();
 
 const Navigate = () => (
-  <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
+  <Stack.Navigator initialRouteName="Name" screenOptions={{headerShown: false}}>
     <Stack.Screen name="Home" component={Home} />
     <Stack.Screen name="Name" component={Name} />
     <Stack.Screen name="Cellphone" component={Cellphone} />

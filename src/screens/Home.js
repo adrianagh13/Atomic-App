@@ -1,5 +1,11 @@
 import React from 'react';
-import {Text, ImageBackground, View, ScrollView, SafeAreaView} from 'react-native';
+import {
+  Text,
+  ImageBackground,
+  View,
+  ScrollView,
+  SafeAreaView,
+} from 'react-native';
 import {
   arrow,
   astronaut,
@@ -26,6 +32,7 @@ import {
   TeamCards,
 } from '../components';
 import {Color, Size} from '../theme/default';
+import {useNavigation} from '@react-navigation/native';
 
 const DescriptionText = () => {
   return (
@@ -151,7 +158,7 @@ const TeamText = () => {
 
 const OurTeamText = () => {
   return (
-    <Container row justify="center" margin="10%">
+    <Container row justify="center" margin="8%">
       <StyledText text="NUESTRO" color={Color.primary} size={Size.h3} weight />
       <StyledText
         text=" EQUIPO"
@@ -160,16 +167,17 @@ const OurTeamText = () => {
         weight
       />
     </Container>
-  )
-}
+  );
+};
 
 export const Home = () => {
+  const navigation = useNavigation();
   return (
     <ScrollView>
       <ImageBackground
         source={background1}
         resizeMode="cover"
-        style={{flex: 1, justifyContent: 'center', marginTop: -50}}>
+        style={{marginTop: -50}}>
         <Logo />
         <DescriptionText />
         <DownButton />
@@ -179,7 +187,11 @@ export const Home = () => {
           width={'360px'}
           height={'310px'}
         />
-        <GeneralButton text="¡Quiero ser parte!" color={Color.blue} />
+        <GeneralButton
+          text="¡Quiero ser parte!"
+          color={Color.blue}
+          action={() => navigation.navigate('Name')}
+        />
         <RightArmText />
         <CardsScroll />
         <LoveToText />
@@ -190,11 +202,15 @@ export const Home = () => {
           height="120px"
         />
         <TeamText />
-        <GeneralButton text="¡Quiero ser parte!" color={Color.blue} />
+        <GeneralButton
+          text="¡Quiero ser parte!"
+          color={Color.blue}
+          action={() => navigation.navigate('Name')}
+        />
         <OurTeamText />
         <TeamCards />
-        <Footer />
       </ImageBackground>
+      <Footer />
     </ScrollView>
   );
 };

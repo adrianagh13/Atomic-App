@@ -7,11 +7,7 @@ import { ImageComponent } from '../ImageComponent';
 
 export const Footer = () => {
   return (
-    <Container
-      color={Color.black}
-      height="130px"
-      justify="space-around"
-      top="1%">
+    <Container color={Color.black} height="180px" justify="space-around">
       <StyledText
         text="© 2020 AtomicLabs. Todos los derechos reservados."
         size={Size.h5}
