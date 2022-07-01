@@ -1,7 +1,7 @@
 export const Size = {
   h1: '48px',
   h2: '40px',
-  h3: '20px',
+  h3: '35px',
   h4: '18px',
 };
 

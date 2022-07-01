@@ -1,7 +1,9 @@
 import React from 'react';
 import {Text, ImageBackground, View, ScrollView} from 'react-native';
-import {astronaut, atomic, background1} from '../assets/images';
+import {astronaut, atomic, background1, division, dots1, imagine} from '../assets/images';
 import {
+  Card,
+  CardsScroll,
   Container,
   DownButton,
   GeneralButton,
@@ -45,6 +47,39 @@ const DescriptionText = () => {
   );
 };
 
+const RightArmText = () => {
+  return (
+    <Container margin="35px">
+      <StyledText
+        text="SOMOS EL BRAZO"
+        color={Color.primary}
+        size={Size.h3}
+        weight
+      />
+      <Container row>
+        <StyledText
+          text="DERECHO"
+          color={Color.primary}
+          size={Size.h3}
+          weight
+        />
+        <StyledText
+          text=" DE LA"
+          color={Color.secondary}
+          size={Size.h3}
+          weight
+        />
+      </Container>
+      <StyledText
+        text="TECNOLOGÍA"
+        color={Color.secondary}
+        size={Size.h3}
+        weight
+      />
+    </Container>
+  );
+};
+
 export const Home = () => {
   return (
     <ScrollView>
@@ -57,6 +92,8 @@ export const Home = () => {
         <DownButton />
         <ImageComponent source={astronaut} width={'360px'} height={'310px'} />
         <GeneralButton text="¡Quiero ser parte!" color={Color.blue} />
+        <RightArmText />
+        <CardsScroll />
       </ImageBackground>
     </ScrollView>
   );
