@@ -59,7 +59,7 @@ const EnterText = () => {
   );
 };
 
-export const Name = ({navigation}) => {
+export const Name = ({}) => {
   return (
     <ScrollView>
       <ImageBackground

@@ -19,11 +19,13 @@ import twitter from './twitter.png';
 import bar1 from './bar1.png';
 import bar2 from './bar2.png';
 import filled1 from './1-filled.png';
-import filled2 from './1-filled.png';
+import filled2 from './2-filled.png';
 import two from './2.png';
 import twoGray from './two-gray.png';
 import lock from './lock.png';
 import nameimg from './name-screen.png';
+import cellimg from './cellphone-screen.png';
+import check from './checkmark.png';
 
 export {
   atomic,
@@ -52,4 +54,6 @@ export {
   twoGray,
   lock,
   nameimg,
+  cellimg,
+  check,
 };

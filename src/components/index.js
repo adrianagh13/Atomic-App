@@ -11,3 +11,4 @@ export {TeamCards} from './organisms/TeamCards';
 export {Footer} from './molecules/Footer';
 export {GeneralInput} from './atoms/GeneralInput';
 export {NameForm} from './organisms/NameForm.js';
+export {CellphoneForm} from './organisms/CellphoneForm';

@@ -1,25 +1,7 @@
 import React from 'react';
+import {ImageBackground, ScrollView} from 'react-native';
+import {arrow, astronaut, background1, team} from '../assets/images';
 import {
-  Text,
-  ImageBackground,
-  View,
-  ScrollView,
-  SafeAreaView,
-} from 'react-native';
-import {
-  arrow,
-  astronaut,
-  atomic,
-  background1,
-  division,
-  dots1,
-  imagine,
-  linkedin,
-  ramon,
-  team,
-} from '../assets/images';
-import {
-  Card,
   CardsScroll,
   Container,
   DownButton,
@@ -28,7 +10,6 @@ import {
   ImageComponent,
   Logo,
   StyledText,
-  TeamCard,
   TeamCards,
 } from '../components';
 import {Color, Size} from '../theme/default';
