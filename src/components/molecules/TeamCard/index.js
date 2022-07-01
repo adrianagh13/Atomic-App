@@ -9,7 +9,8 @@ export const TeamCard = ({name, job, picture}) => {
   return (
     <CardContainer>
       <Container
-        color={Color.blue2}
+        radius
+        color={Color.blue}
         width="350px"
         height="240px"
         justify="space-around">

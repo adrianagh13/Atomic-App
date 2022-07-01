@@ -10,6 +10,7 @@ export const Card = ({imageTitleSource, titleText, children, dots}) => {
   return (
     <CardContainer>
       <Container
+        radius
         color={Color.secondary}
         width="350px"
         height="480px"

@@ -8,3 +8,4 @@ export {Card} from './molecules/Card';
 export {CardsScroll} from './organisms/CardsScroll';
 export {TeamCard} from './molecules/TeamCard';
 export {TeamCards} from './organisms/TeamCards';
+export {Footer} from './molecules/Footer';

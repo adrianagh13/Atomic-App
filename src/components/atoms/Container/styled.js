@@ -9,5 +9,7 @@ export const ContainerView = styled.View`
   width: ${props => (props.width ? props.width : 'auto')};
   background-color: ${props => props.color};
   border-radius: 12px;
+  border-radius: ${props => (props.radius ? '12px' : '0')};
   justify-content: ${props => props.justify};
+  margin-top: ${props => (props.top ? props.top : '0')};
 `;

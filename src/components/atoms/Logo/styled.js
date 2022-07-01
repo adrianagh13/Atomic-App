@@ -7,5 +7,5 @@ export const LogoImg = styled.Image`
 `;
 
 export const LogoContainer = styled.View`
-  padding-top: 40px;
+  padding-top: 80px;
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, ImageBackground, View, ScrollView} from 'react-native';
+import {Text, ImageBackground, View, ScrollView, SafeAreaView} from 'react-native';
 import {
   arrow,
   astronaut,
@@ -8,6 +8,7 @@ import {
   division,
   dots1,
   imagine,
+  linkedin,
   ramon,
   team,
 } from '../assets/images';
@@ -16,6 +17,7 @@ import {
   CardsScroll,
   Container,
   DownButton,
+  Footer,
   GeneralButton,
   ImageComponent,
   Logo,
@@ -61,7 +63,7 @@ const DescriptionText = () => {
 
 const RightArmText = () => {
   return (
-    <Container margin="35px">
+    <Container margin="8%">
       <StyledText
         text="SOMOS EL BRAZO"
         color={Color.primary}
@@ -167,12 +169,12 @@ export const Home = () => {
       <ImageBackground
         source={background1}
         resizeMode="cover"
-        style={{flex: 1}}>
+        style={{flex: 1, justifyContent: 'center', marginTop: -50}}>
         <Logo />
         <DescriptionText />
         <DownButton />
         <ImageComponent
-          margin="10px"
+          margin="3%"
           source={astronaut}
           width={'360px'}
           height={'310px'}
@@ -191,6 +193,7 @@ export const Home = () => {
         <GeneralButton text="¡Quiero ser parte!" color={Color.blue} />
         <OurTeamText />
         <TeamCards />
+        <Footer />
       </ImageBackground>
     </ScrollView>
   );

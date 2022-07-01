@@ -14,6 +14,8 @@ import ramon from './ramon.png';
 import jaime from './jaime.png';
 import ximena from './ximena.png';
 import arrow from './arrow.png';
+import {linkedin} from './linkedin.png';
+import {twitter} from './twitter.png';
 
 export {
   atomic,
@@ -32,4 +34,6 @@ export {
   ramon,
   ximena,
   arrow,
+  twitter,
+  linkedin,
 };

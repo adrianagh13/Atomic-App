@@ -12,4 +12,5 @@ export const Color = {
   wrong: '#FF0000',
   blue: '#035397',
   blue2: '#398AB9',
+  black: '#000000',
 };
