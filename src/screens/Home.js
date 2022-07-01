@@ -191,6 +191,7 @@ export const Home = () => {
           text="¡Quiero ser parte!"
           color={Color.blue}
           action={() => navigation.navigate('Name')}
+          margin="12%"
         />
         <RightArmText />
         <CardsScroll />
@@ -206,6 +207,7 @@ export const Home = () => {
           text="¡Quiero ser parte!"
           color={Color.blue}
           action={() => navigation.navigate('Name')}
+          margin="12%"
         />
         <OurTeamText />
         <TeamCards />

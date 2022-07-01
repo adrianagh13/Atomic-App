@@ -19,8 +19,12 @@ export const Footer = () => {
         color={Color.primary}
       />
       <Container row>
-        <ImageComponent source={linkedin} height="20px" width="25px" />
-        <ImageComponent source={twitter} height="20px" width="25px" />
+        <Container width="20%">
+          <ImageComponent source={linkedin} height="20px" width="25px" />
+        </Container>
+        <Container width="20%">
+          <ImageComponent source={twitter} height="20px" width="25px" />
+        </Container>
       </Container>
     </Container>
   );

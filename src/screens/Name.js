@@ -1,8 +1,8 @@
-import {View, Text, ImageBackground, ScrollView} from 'react-native';
+import {ImageBackground, ScrollView} from 'react-native';
 import React from 'react';
-import {background1, bar1, filled1, two, twoGray} from '../assets/images';
-import {Container, ImageComponent, Logo, StyledText} from '../components';
-import { Color, Size } from '../theme/default';
+import {background1, bar1, filled1, nameimg, twoGray} from '../assets/images';
+import {Container, Footer, GeneralInput, ImageComponent, Logo, NameForm, StyledText} from '../components';
+import {Color, Size} from '../theme/default';
 
 const ProgressBar = () => {
   return (
@@ -42,6 +42,23 @@ const KnowText = () => {
   );
 };
 
+const EnterText = () => {
+  return (
+    <Container margin="3%" align="flex-start">
+      <StyledText
+        text=" Queremos saber que eres tú, por favor"
+        color={Color.primary}
+        size={Size.h4}
+      />
+      <StyledText
+        text=" ingresa los siguientes datos"
+        color={Color.primary}
+        size={Size.h4}
+      />
+    </Container>
+  );
+};
+
 export const Name = ({navigation}) => {
   return (
     <ScrollView>
@@ -52,6 +69,10 @@ export const Name = ({navigation}) => {
         <Logo />
         <ProgressBar />
         <KnowText />
+        <EnterText />
+        <NameForm />
+        <ImageComponent source={nameimg} width="380px" height="580px" />
+        <Footer />
       </ImageBackground>
     </ScrollView>
   );

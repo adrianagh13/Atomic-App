@@ -22,6 +22,8 @@ import filled1 from './1-filled.png';
 import filled2 from './1-filled.png';
 import two from './2.png';
 import twoGray from './two-gray.png';
+import lock from './lock.png';
+import nameimg from './name-screen.png';
 
 export {
   atomic,
@@ -48,4 +50,6 @@ export {
   filled2,
   two,
   twoGray,
+  lock,
+  nameimg,
 };
