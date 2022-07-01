@@ -26,6 +26,7 @@ import lock from './lock.png';
 import nameimg from './name-screen.png';
 import cellimg from './cellphone-screen.png';
 import check from './checkmark.png';
+import finished from './finished.png';
 
 export {
   atomic,
@@ -56,4 +57,5 @@ export {
   nameimg,
   cellimg,
   check,
+  finished,
 };

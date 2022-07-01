@@ -12,8 +12,6 @@ import {
   CellphoneForm,
   Container,
   Footer,
-  GeneralButton,
-  GeneralInput,
   ImageComponent,
   Logo,
   StyledText,

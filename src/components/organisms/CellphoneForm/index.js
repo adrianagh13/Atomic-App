@@ -17,7 +17,7 @@ export const CellphoneForm = () => {
         width="80%"
         weight
         margin="8%"
-        action={() => navigation.navigate('Cellphone')}
+        action={() => navigation.navigate('Registered')}
       />
     </Container>
   );
