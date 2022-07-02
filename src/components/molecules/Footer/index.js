@@ -3,11 +3,15 @@ import {linkedin, twitter} from '../../../assets/images';
 import {Color, Size} from '../../../theme/default';
 import {Container} from '../../atoms/Container';
 import {StyledText} from '../../atoms/StyledText';
-import { ImageComponent } from '../ImageComponent';
+import {ImageComponent} from '../ImageComponent';
 
 export const Footer = () => {
   return (
-    <Container color={Color.black} height="180px" justify="space-around">
+    <Container
+      color={Color.black}
+      height="180px"
+      justify="space-around"
+      padding="5%">
       <StyledText
         text="© 2020 AtomicLabs. Todos los derechos reservados."
         size={Size.h5}
