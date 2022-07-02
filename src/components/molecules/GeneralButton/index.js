@@ -12,12 +12,14 @@ export const GeneralButton = ({
   width,
   weight,
   margin,
+  disabled,
 }) => {
   return (
-    <Container margin={margin} width={width}>
+    <Container margin={margin} width={width} opacity={disabled}>
       <ButtonStyled
         background={background}
         color={color}
+        disabled={disabled}
         onPress={action}
         width={width}>
         <StyledText text={text} color={color} size={Size.h4} weight={weight} />

@@ -71,7 +71,12 @@ export const Name = ({}) => {
         <KnowText />
         <EnterText />
         <NameForm />
-        <ImageComponent source={nameimg} width="380px" height="580px" />
+        <ImageComponent
+          source={nameimg}
+          width="380px"
+          height="580px"
+          margin="1%"
+        />
         <Footer />
       </ImageBackground>
     </ScrollView>

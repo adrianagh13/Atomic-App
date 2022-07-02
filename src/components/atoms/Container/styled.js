@@ -11,4 +11,5 @@ export const ContainerView = styled.View`
   border-radius: 12px;
   border-radius: ${props => (props.radius ? '12px' : '0')};
   justify-content: ${props => props.justify};
+  opacity: ${props => (props.opacity ? '0.5' : '1')};
 `;
