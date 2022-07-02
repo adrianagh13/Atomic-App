@@ -5,7 +5,7 @@ import {TeamCard} from '../../molecules/TeamCard';
 
 export const TeamCards = () => {
   return (
-    <Container padding="8%" justify="space-between" height="850px">
+    <Container justify="center" height="880px">
       <TeamCard name="Ramón Gómez" job="Front-end developer" picture={ramon} />
       <TeamCard name="Ximena Mejía" job="UX Designer" picture={ximena} />
       <TeamCard

@@ -4,17 +4,12 @@ import {Color, Size} from '../../../theme/default';
 import {Container} from '../../atoms/Container';
 import {StyledText} from '../../atoms/StyledText';
 import {ImageComponent} from '../ImageComponent';
-import {ImageTitle, CardContainer} from './styled';
+import {ImageTitle, CardContainer, DotsContainer} from './styled';
 
 export const Card = ({imageTitleSource, titleText, children, dots}) => {
   return (
     <CardContainer>
-      <Container
-        radius
-        color={Color.secondary}
-        width="350px"
-        height="480px"
-        margin={'20px'}>
+      <Container radius color={Color.secondary} width="350px" height="480px">
         <ImageComponent
           margin="5%"
           source={imageTitleSource}
@@ -35,9 +30,9 @@ export const Card = ({imageTitleSource, titleText, children, dots}) => {
         />
         {children}
       </Container>
-      <Container margin={'18px'}>
+      <DotsContainer>
         <ImageComponent source={dots} width="100px" height="25px" />
-      </Container>
+      </DotsContainer>
     </CardContainer>
   );
 };

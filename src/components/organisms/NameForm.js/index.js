@@ -12,14 +12,12 @@ export const NameForm = () => {
   const [lastNameBoolean, setLastNameBoolean] = useState(true);
   const [lastName, setLastName] = useState('');
   const [disabled, setDisabled] = useState(true);
-  const [borderColor, setBorderColor] = useState(Color.error);
 
   const handleName = text => {
     setNameBoolean(false);
     if (text.length >= 5) {
       setNameBoolean(true);
       setName(text);
-      setBorderColor(Color.error);
     }
   };
 
@@ -28,7 +26,6 @@ export const NameForm = () => {
     if (text.length >= 5) {
       setLastNameBoolean(true);
       setLastName(text);
-      setBorderColor(Color.error);
     }
     if (nameBoolean === true && lastNameBoolean === true) {
       setDisabled(false);
@@ -42,14 +39,12 @@ export const NameForm = () => {
         onChange={handleName}
         error={nameBoolean}
         errorText="El nombre deberá tener mínimo 5 caracteres"
-        border={borderColor}
       />
       <GeneralInput
         text="Apellidos"
         onChange={handleEnable}
         error={lastNameBoolean}
         errorText="Los apellidos deben tener mínimo 5 caracteres"
-        border={borderColor}
       />
       <GeneralButton
         background={Color.secondary}

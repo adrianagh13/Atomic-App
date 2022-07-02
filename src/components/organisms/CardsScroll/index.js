@@ -21,7 +21,7 @@ export const CardsScroll = () => {
           align="flex-start"
           height={'140px'}
           justify="space-between"
-          margin={'18px'}>
+          margin="5%">
           <Container row>
             <StyledText
               text=" • Estrategia"
@@ -77,7 +77,7 @@ export const CardsScroll = () => {
           align="flex-start"
           height={'140px'}
           justify="space-between"
-          margin={'18px'}>
+          margin="5%">
           <Container align={"flex-start"}>
             <Container row>
               <StyledText
@@ -118,7 +118,7 @@ export const CardsScroll = () => {
           align="flex-start"
           height={'140px'}
           justify="space-between"
-          margin={'18px'}>
+          margin="5%">
           <Container>
             <StyledText
               text=" • Desarrollo tecnológico y "

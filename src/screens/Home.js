@@ -84,7 +84,7 @@ const RightArmText = () => {
 
 const LoveToText = () => {
   return (
-    <Container margin="25px">
+    <Container margin="5%">
       <StyledText
         text="¡TE ENCANTARÁ"
         color={Color.primary}
@@ -114,7 +114,7 @@ const TeamText = () => {
         <StyledText text="Contratación" color={Color.primary} size={Size.h5} />
         <StyledText text="remota" color={Color.primary} size={Size.h5} />
       </Container>
-      <ImageComponent margin="4px" source={arrow} height="10px" width="20px" />
+      <ImageComponent margin="1%" source={arrow} height="10px" width="20px" />
       <Container>
         <StyledText
           text="Entrevista con"
@@ -123,12 +123,12 @@ const TeamText = () => {
         />
         <StyledText text="el área de RH" color={Color.primary} size={Size.h5} />
       </Container>
-      <ImageComponent margin="4px" source={arrow} height="10px" width="20px" />
+      <ImageComponent margin="1%" source={arrow} height="10px" width="20px" />
       <Container>
         <StyledText text="Prueba" color={Color.primary} size={Size.h5} />
         <StyledText text="Práctica" color={Color.primary} size={Size.h5} />
       </Container>
-      <ImageComponent margin="4px" source={arrow} height="10px" width="20px" />
+      <ImageComponent margin="1%" source={arrow} height="10px" width="20px" />
       <Container>
         <StyledText text="Entrevista" color={Color.primary} size={Size.h5} />
         <StyledText text="técnica" color={Color.primary} size={Size.h5} />
@@ -139,7 +139,7 @@ const TeamText = () => {
 
 const OurTeamText = () => {
   return (
-    <Container row justify="center" margin="8%">
+    <Container row justify="center" margin="5%">
       <StyledText text="NUESTRO" color={Color.primary} size={Size.h3} weight />
       <StyledText
         text=" EQUIPO"
