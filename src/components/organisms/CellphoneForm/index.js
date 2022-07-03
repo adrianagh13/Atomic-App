@@ -9,12 +9,14 @@ export const CellphoneForm = () => {
   const navigation = useNavigation();
   const [phone, setPhone] = useState('');
   const [phoneBoolean, setPhoneBoolean] = useState(true);
+  const [disabled, setDisabled] = useState(true);
 
   const handlePhone = text => {
     setPhoneBoolean(false);
     if (text.length === 10) {
       setPhoneBoolean(true);
       setPhone(text);
+      setDisabled(false)
     }
   };
   return (
@@ -28,13 +30,14 @@ export const CellphoneForm = () => {
         type="numeric"
       />
       <GeneralButton
+        action={() => navigation.navigate('Registered')}
         background={Color.secondary}
-        text="Enviar"
         color={Color.primary}
+        disabled={disabled}
+        text="Enviar"
         width="80%"
         weight
         margin="8%"
-        action={() => navigation.navigate('Registered')}
       />
     </Container>
   );

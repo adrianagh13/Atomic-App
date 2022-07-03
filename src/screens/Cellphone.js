@@ -99,7 +99,12 @@ export const Cellphone = () => {
         <ValidateText />
         <EnterText />
         <CellphoneForm />
-        <ImageComponent source={cellimg} width="380px" height="580px" />
+        <ImageComponent
+          source={cellimg}
+          width="380px"
+          height="580px"
+          margin="2%"
+        />
         <Footer />
       </ImageBackground>
     </ScrollView>

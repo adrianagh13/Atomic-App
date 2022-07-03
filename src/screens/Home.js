@@ -49,7 +49,7 @@ const DescriptionText = () => {
   );
 };
 
-const RightArmText = () => {
+export const RightArmText = () => {
   return (
     <Container margin="8%">
       <StyledText
@@ -161,7 +161,7 @@ export const Home = () => {
         style={{marginTop: -50}}>
         <Logo />
         <DescriptionText />
-        <DownButton />
+        <DownButton action={() => navigation.push('Home')} />
         <ImageComponent
           margin="3%"
           source={astronaut}
