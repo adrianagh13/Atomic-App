@@ -84,7 +84,7 @@ const EnterText = () => {
       />
     </Container>
   );
-}
+};
 
 export const Cellphone = () => {
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Color, Size} from '../../../theme/default';
 import {Container} from '../Container';
 import {StyledText} from '../StyledText';
@@ -12,14 +12,6 @@ export const GeneralInput = ({
   length,
   type,
 }) => {
-  const [phoneBoolean, setPhoneBoolean] = useState(true);
-  const [phone, setPhone] = useState('');
-  const handlePhone = text => {
-    if (text.length === 10) {
-      setPhoneBoolean(false);
-      setPhone(text);
-    }
-  };
   return (
     <Container
       width="100%"

@@ -1,7 +1,14 @@
 import {ImageBackground, ScrollView} from 'react-native';
 import React from 'react';
 import {background1, bar1, filled1, nameimg, twoGray} from '../assets/images';
-import {Container, Footer, GeneralInput, ImageComponent, Logo, NameForm, StyledText} from '../components';
+import {
+  Container,
+  Footer,
+  ImageComponent,
+  Logo,
+  NameForm,
+  StyledText,
+} from '../components';
 import {Color, Size} from '../theme/default';
 
 const ProgressBar = () => {
