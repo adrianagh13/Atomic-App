@@ -75,10 +75,10 @@ export const CardsScroll = () => {
       <Card imageTitleSource={explore} titleText="EXPLORA" dots={dots2}>
         <Container
           align="flex-start"
-          height={'140px'}
+          height="140px"
           justify="space-between"
           margin="5%">
-          <Container align={"flex-start"}>
+          <Container align="flex-start">
             <Container row>
               <StyledText
                 text=" • Innovación"
